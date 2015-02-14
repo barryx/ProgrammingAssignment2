@@ -3,7 +3,7 @@
 ## be cached to avoid unnecessary duplication of work. In this case, we cache 
 ## the inverse of a matrix.
 
-## makecacheMatrix creates a special "matrix" object that can cache its inverse.
+## makeCacheMatrix creates a special "matrix" object that can cache its inverse.
 ## It has functions to:
 ##   1. set the value of the matrix
 ##   2. get the value of the matrix
@@ -30,7 +30,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve computes the inverse of a special "matrix" returned by makeCacheMatrix. 
 ## If the inverse has already been calculated (and the matrix has not changed), then 
-## cachesolve retrieves the inverse from the cache. 
+## cacheSolve retrieves the inverse from the cache. 
 ## NOTE: This function assumes the matrix can be inverted.
 
 cacheSolve <- function(x, ...) {
